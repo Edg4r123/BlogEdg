@@ -47,3 +47,6 @@ body{
 .post_date{ padding-left: 2em; font-family: Dosis; font-size: 20px; }
 .color_top{ height: 8px; }
 .card .card-content .card-title{ font-weight: 400; }
+.card .card-action { padding: 10px 20px; }
+.card .card-action a{ text-transform: inherit !important; }
+.card-title a{ color: inherit; }
