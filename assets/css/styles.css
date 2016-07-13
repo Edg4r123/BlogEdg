@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:500);
+body{
+	background-image: url(../images/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+#main{ margin-top: 2em; }
+.social_box{ padding: .5em; }
+.social_box a{
+	color: #ef5350;
+	font-size: 26px;
+    height: 42px;
+    line-height: 40px;
+    width: 42px;
+    padding: 0;
+    margin: 9px 2px;
+    background: #ffffff;
+    border-radius: 21px;
+    display: inline-block;
+    text-decoration: none !important;
+    transition: all 200ms linear;
+}
+.social_box a:hover{
+	background: #555;
+    color: #ffffff;
+    transition: all 200ms linear;
+}
+.social_box a i{
+	vertical-align: middle;
+    line-height: 40px;
+}
+.post_icons{
+    height: 50px;
+    /*background: #ef5350 url(../images/format-icons.png) no-repeat 0 -240px;*/
+}
+.post_icons:before{
+	content: "";
+	width: 69px;
+	height: 60px;
+	position: absolute;
+	left: -11px;
+    top: 0px;
+    border-radius: 0 30px 30px 0;
+    transform: scale(0.7);
+	background: #ef5350 url(../images/format-icons.png) no-repeat 0 -240px;
+}
+.post_date{ padding-left: 2em; font-family: Dosis; font-size: 20px; }
+.color_top{ height: 8px; }
+.card .card-content .card-title{ font-weight: 400; }
