@@ -1,0 +1,2 @@
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam optio, delectus quam eligendi autem reiciendis sapiente ut atque excepturi perferendis suscipit deleniti unde totam facere animi sit aut quisquam, quibusdam!</p>
+<p><?php echo base_url(); ?></p>

@@ -1,0 +1,37 @@
+.asidebar{
+    position: fixed;
+	width: 240px;
+    top: 56px;
+    left: 0;
+    height: calc(100% - 56px);
+}
+.main-content-adm{
+	position: relative;
+    margin-left: 240px;
+    padding: 1em;
+}
+.list-menu li{
+	line-height: 34px;
+}
+.list-menu li > a{
+	display: block;
+	color: #eee;
+	text-decoration: none;
+	padding-left: 1em;
+	transition: all .1s linear;
+}
+.list-menu li > a:hover{
+	background: white;
+	color: gray;
+	transition: all .1s linear
+}
+.list-menu .icon{
+	display: inline-block;
+	color: #7a7a7a;
+    width: 40px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+}
