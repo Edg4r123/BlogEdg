@@ -4,13 +4,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title><?php echo $titulo; ?></title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/materialize.css">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/jquery.dataTables.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/select.dataTables.min.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style-main.css">
 </head>
 <body>
-	<header id="header">
+	<header id="header" class="navbar-fixed">
 		<nav id="site-navigation" class="teal darken-1">
 			<div class="nav-wrapper">
 				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -36,15 +39,15 @@
 					</a>
 				</li>
 				<li>
-					<a href="entradas">
-						<span class="icon"><i class="fa fa-thumb-tack"></i></span>
+					<a href="administrador/entradas">
+						<span class="icon"><i class="material-icons">assignment</i></span>
 						<span class="title">Entradas</span>
 						<span class="arrow"></span>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<span class="icon"><i class="fa fa-comments"></i></span>
+						<span class="icon"><i class="material-icons">forum</i></span>
 						<span class="title">Comentarios</span>
 						<span class="arrow"></span>
 					</a>
@@ -58,7 +61,7 @@
 				</li>
 				<li>
 					<a href="#">
-						<span class="icon"><i class="fa fa-users"></i></span>
+						<span class="icon"><i class="material-icons">assignment_ind</i></span>
 						<span class="title">Usuarios</span>
 						<span class="arrow"></span>
 					</a>
@@ -72,7 +75,7 @@
 				</li>
 				<li>
 					<a href="#">
-						<span class="icon"><i class="fa fa-cog"></i></span>
+						<span class="icon"><i class="material-icons">settings</i></span>
 						<span class="title">Ajustes</span>
 						<span class="arrow"></span>
 					</a>
