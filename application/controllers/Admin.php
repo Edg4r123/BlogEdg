@@ -21,6 +21,11 @@ class Admin extends CI_Controller
 		$this->_load_layout("admin/entradas.php", $data);	
 	}
 
+	function usuarios(){
+		$data['titulo'] = "Usuarios";
+		$this->_load_layout("admin/usuarios.php", $data);
+	}
+
 	function _load_layout($page , $data = []){
 		$this->load->view("layout/header_admin.php", $data);
 		$this->load->view($page, $data);

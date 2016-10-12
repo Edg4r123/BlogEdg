@@ -32,14 +32,14 @@
 		<div class="asidebar z-depth-1 grey darken-4 blue-grey-text text-grey-darken">
 			<ul class="list-menu">
 				<li>
-					<a href="#">
+					<a href="<?php echo base_url() . 'administrador'; ?>">
 						<span class="icon"><i class="material-icons">dashboard</i></span>
 						<span class="title">Inicio</span>
 						<span class="arrow"></span>
 					</a>
 				</li>
 				<li>
-					<a href="administrador/entradas">
+					<a href="<?php echo base_url() . 'administrador/entradas'; ?>">
 						<span class="icon"><i class="material-icons">assignment</i></span>
 						<span class="title">Entradas</span>
 						<span class="arrow"></span>
@@ -60,7 +60,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="<?php echo base_url() . 'administrador/usuarios'; ?>">
 						<span class="icon"><i class="material-icons">assignment_ind</i></span>
 						<span class="title">Usuarios</span>
 						<span class="arrow"></span>

@@ -38,9 +38,9 @@
 }
 .list-menu .material-icons{ vertical-align: middle; }
 .btn { text-transform: none !important; }
-.title-entradas > * { display: inline-block; vertical-align: middle; }
-.title-entradas > h1 { font-size: 45px; margin: 0; }
-.title-entradas > button { padding: 0 1rem; height: 30px; line-height: 30px; }
+.title-content > * { display: inline-block; vertical-align: middle; }
+.title-content > h1 { font-size: 45px; margin: 0; }
+.title-content > button { padding: 0 1rem; height: 30px; line-height: 30px; }
 table.dataTable > * { font-family: "Lato"; }
 table.dataTable > tbody tr td:hover > .row-actions { visibility: visible; }
 .row-actions{ visibility: hidden; font-size: 13px; }

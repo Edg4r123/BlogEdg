@@ -19,10 +19,22 @@
 	<script type="text/javascript" src="https://use.fontawesome.com/ee823df523.js"></script>
 	<script>
 		$(function () {
-			$("#example").dataTable({
+			$("#entradas-table").dataTable({
 				columnDefs : [
 					{"orderable" : false, "targets" : 0, "className" : "select-checkbox"},
 					{"width" : "35%", "targets" : 1}
+				],
+				select : {
+					style : "os",
+					selector : "td:first-child"
+				},
+				order : [[ 1, "asc" ]]
+			});
+			$("#usuarios-table").dataTable({
+				columnDefs : [
+					{"orderable" : false, "targets" : 0, "className" : "select-checkbox"},
+					{"width" : "30%", "targets" : 1},
+					{"width" : "20%", "targets" : 2}
 				],
 				select : {
 					style : "os",
