@@ -36,6 +36,7 @@
     position: relative;
     font-size: 20px;
 }
+.list-menu .material-icons{ vertical-align: middle; }
 .btn { text-transform: none !important; }
 .title-entradas > * { display: inline-block; vertical-align: middle; }
 .title-entradas > h1 { font-size: 45px; margin: 0; }
@@ -43,5 +44,5 @@
 table.dataTable > * { font-family: "Lato"; }
 table.dataTable > tbody tr td:hover > .row-actions { visibility: visible; }
 .row-actions{ visibility: hidden; font-size: 13px; }
-.row-actions a{ color: #0073aa; padding: 0 .3em; }
+.row-actions a{ /*color: #0073aa;*/ color: #00897b; padding: 0 .3em; }
 .row-actions a:hover{ color: #00a0d2; }
