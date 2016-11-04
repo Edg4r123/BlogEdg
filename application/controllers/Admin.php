@@ -9,6 +9,10 @@ class Admin extends CI_Controller
 	function __construct(){
 		parent::__construct();
 		$this->load->helper("url");
+		$this->load->library("session");
+		if (!$this->session->has_userdata("ID")) {
+			redirect(base_url() . "login");	
+		}
 	}
 
 	function index(){
@@ -30,5 +34,11 @@ class Admin extends CI_Controller
 		$this->load->view("layout/header_admin.php", $data);
 		$this->load->view($page, $data);
 		$this->load->view("layout/footer_admin.php", $data);
+	}
+
+	function logout()
+	{
+		$this->session->sess_destroy();
+		redirect(base_url() . "login");	
 	}
 }

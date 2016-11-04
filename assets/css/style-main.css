@@ -1,3 +1,5 @@
+/* NAV */
+.img-nav{ display: inline-block; vertical-align: middle; border-radius: 2px; }
 .asidebar{
     position: fixed;
 	width: 220px;

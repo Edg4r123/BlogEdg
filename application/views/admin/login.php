@@ -12,7 +12,7 @@
 </head>
 <body>
 	<div class="content-login z-depth-1">
-		<a href="#"><img class="brand" src="assets/images/admin-images/logo-mkt.png" alt=""></a>
+		<a href="#"><img class="brand" src="<?php echo base_url(); ?>assets/images/admin-images/logo-mkt.png" alt=""></a>
 		<form action="<?php echo base_url(); ?>LoginAdmin/ingresando" method="post">
 			<div class="input-field">
 				<input id="user-name" name="user-name" type="text" required="true">
@@ -29,6 +29,9 @@
 			<div class="right-align">
 				<button class="btn waves-effect waves-light" type="submit">Acceder</button>
 			</div>
+			<?php if($log == "false"): ?>
+			<p class="center-align red-text text-darken-1">La contraseña y/o el usuario son incorrectos</p>
+			<?php endif; ?>
 		</form>
 	</div>
 </body>

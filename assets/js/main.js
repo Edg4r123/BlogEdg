@@ -1,4 +1,5 @@
 $(document).on("ready", init);
-function init (argument) {
+function init () {
 	$(".button-collapse").sideNav();
+	$(".dropdown-button").dropdown();
 }

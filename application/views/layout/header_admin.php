@@ -18,8 +18,12 @@
 			<div class="nav-wrapper">
 				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 				<ul class="hide-on-med-and-down right">
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Seccion 2</a></li>
+					<li>
+						<a class="dropdown-button" href="#" data-activates="dropdown-user">
+							<img class="img-nav" src="http://placehold.it/40x40">
+							Hola, <?php echo $this->session->userdata("display_name"); ?>
+						</a>
+					</li>
 				</ul>
 				<ul class="side-nav" id="mobile-demo">
 					<li><a href="#">Inicio</a></li>
@@ -27,6 +31,11 @@
 				</ul>
 			</div>
 		</nav><!-- #site-navigation -->
+		<!-- Dropdown user -->
+		<ul id="dropdown-user" class="dropdown-content">
+			<li><a href="#">Editar perfil</a></li>
+			<li><a href="<?php echo base_url() ?>administrador/logout/">Cerrar sesión</a></li>
+		</ul>
 	</header>
 	<div class="">
 		<div class="asidebar z-depth-1 grey darken-4 blue-grey-text text-grey-darken">
