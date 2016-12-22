@@ -1,6 +1,6 @@
 <div class="title-entradas title-content">
     <h1>Entradas</h1>
-    <button class="waves-effect waves-light pink accent-4 btn">Añadir nueva</button>
+    <a href="<?php echo base_url('administrador/nueva-entrada'); ?>" class="waves-effect waves-light pink accent-4 btn">Añadir nueva</a>
 </div>
 <table id="entradas-table" class="display" width="100%">
     <thead>

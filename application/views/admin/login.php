@@ -15,11 +15,11 @@
 		<a href="#"><img class="brand" src="<?php echo base_url(); ?>assets/images/admin-images/logo-mkt.png" alt=""></a>
 		<form action="<?php echo base_url(); ?>LoginAdmin/ingresando" method="post">
 			<div class="input-field">
-				<input id="user-name" name="user-name" type="text" required="true">
+				<input id="user-name" name="user-name" type="text" required="true" value="<?php echo $cookie_email; ?>">
 				<label for="user-name">Nombre de usuario</label>
 			</div>
 			<div class="input-field">
-				<input id="user-password" name="user-password" type="password" required="true">
+				<input id="user-password" name="user-password" type="password" required="true" value="<?php echo $cookie_pass; ?>">
 				<label for="user-password">Contraseña</label>
 			</div>
 			<p>

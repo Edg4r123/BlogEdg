@@ -34,25 +34,31 @@
 		<!-- Dropdown user -->
 		<ul id="dropdown-user" class="dropdown-content">
 			<li><a href="#">Editar perfil</a></li>
-			<li><a href="<?php echo base_url() ?>administrador/logout/">Cerrar sesión</a></li>
+			<li><a href="<?php echo base_url('administrador/logout/'); ?>">Cerrar sesión</a></li>
 		</ul>
 	</header>
 	<div class="">
 		<div class="asidebar z-depth-1 grey darken-4 blue-grey-text text-grey-darken">
 			<ul class="list-menu">
 				<li>
-					<a href="<?php echo base_url() . 'administrador'; ?>">
+					<a href="<?php echo base_url('administrador'); ?>">
 						<span class="icon"><i class="material-icons">dashboard</i></span>
 						<span class="title">Inicio</span>
 						<span class="arrow"></span>
 					</a>
 				</li>
 				<li>
-					<a href="<?php echo base_url() . 'administrador/entradas'; ?>">
+					<a href="<?php echo base_url('administrador/entradas'); ?>">
 						<span class="icon"><i class="material-icons">assignment</i></span>
 						<span class="title">Entradas</span>
 						<span class="arrow"></span>
 					</a>
+					<ul class="submenu">
+						<li><a href="#">Todas las entradas</a></li>
+						<li><a href="<?php echo base_url('administrador/nueva-entrada'); ?>">Añadir nueva</a></li>
+						<li><a href="#">Categorías</a></li>
+						<li><a href="#">Etiquetas</a></li>
+					</ul>
 				</li>
 				<li>
 					<a href="#">
@@ -69,7 +75,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="<?php echo base_url() . 'administrador/usuarios'; ?>">
+					<a href="<?php echo base_url('administrador/usuarios'); ?>">
 						<span class="icon"><i class="material-icons">assignment_ind</i></span>
 						<span class="title">Usuarios</span>
 						<span class="arrow"></span>
@@ -92,3 +98,11 @@
 			</ul>
 		</div>
 		<div class="main-content-adm">
+<style type="text/css">
+	.submenu { display: none; }
+	.submenu li a { color: gray; margin-left: 2.5em; }
+	.submenu li a:hover { border-left: 2px solid #00897b; background: black; }
+	.list-menu > li { position: relative; }
+	.list-menu > li:hover > .submenu { display: block; transition: all 14s linear;}
+	.dataTables_wrapper { z-index: -1; }
+</style>

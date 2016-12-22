@@ -1,3 +1,4 @@
+h1 { font-size: 45px; }
 /* NAV */
 .img-nav{ display: inline-block; vertical-align: middle; border-radius: 2px; }
 .asidebar{
@@ -21,12 +22,13 @@
 	color: #eee;
 	text-decoration: none;
 	padding-left: 1em;
-	transition: all .1s linear;
+	transition: all .3s linear;
 }
+/*.list-menu li:hover > a { background: white; color: gray; transition: all .1s linear; }*/
 .list-menu li > a:hover{
 	background: white;
 	color: gray;
-	transition: all .1s linear
+	transition: all .3s linear;
 }
 .list-menu .icon{
 	display: inline-block;
@@ -42,9 +44,19 @@
 .btn { text-transform: none !important; }
 .title-content > * { display: inline-block; vertical-align: middle; }
 .title-content > h1 { font-size: 45px; margin: 0; }
-.title-content > button { padding: 0 1rem; height: 30px; line-height: 30px; }
+.title-content > button, .title-content > a { padding: 0 1rem; height: 30px; line-height: 30px; }
 table.dataTable > * { font-family: "Lato"; }
 table.dataTable > tbody tr td:hover > .row-actions { visibility: visible; }
 .row-actions{ visibility: hidden; font-size: 13px; }
 .row-actions a{ /*color: #0073aa;*/ color: #00897b; padding: 0 .3em; }
 .row-actions a:hover{ color: #00a0d2; }
+.post-publicar .btn { padding: 5px;height: auto;line-height: 20px; }
+.post-publicar .card-action a { margin: 0 !important; text-transform: initial !important; }
+#post-area { height: 300px; }
+.post-categorias label { color: white !important; }
+.post-categorias label:before { border-color: white; }
+.btn > i, a > i { vertical-align: middle; }
+.add-categoria { color: #ffab40; }
+input, textarea { border: 1px solid #eee !important; }
+input:focus, textarea:focus { border: 1px solid #eee !important; border-color: #5b9dd9 !important; box-shadow: 0 0 2px rgba(30,140,190,.8) !important;}
+#form-post p { margin: 0 !important; }

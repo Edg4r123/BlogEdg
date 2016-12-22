@@ -17,7 +17,12 @@
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/dataTables.select.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/main.js"></script>
 	<script type="text/javascript" src="https://use.fontawesome.com/ee823df523.js"></script>
+	<script src='//cdn.tinymce.com/4/tinymce.min.js'></script>
 	<script>
+		tinymce.init({
+			selector: '#post-area',
+			plugins : 'advlist autolink link image lists charmap print preview code'
+		});
 		$(function () {
 			$("#entradas-table").dataTable({
 				columnDefs : [
